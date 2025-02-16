@@ -1,3 +1,6 @@
+# Ignore client folder
+client/
+
 # Dependencies
 node_modules/
 .env
