@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  background-color: #222;
+  border: 3px solid #e1dac4;
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  /* box-shadow: 0px 0px 30px rgba(255, 204, 0, 0.7); */
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #00ff55;
+  /* text-shadow: 0px 0px 12px #00ff55; */
+  margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+/* Input Field */
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #00ff55;
+  background-color: #111;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+.input-field::placeholder {
+  color: #777;
+}
+.input-field:focus {
+  border-color: #00e676;
+  /* box-shadow: 0 0 10px #00e676; */
+}
+
+/* Button Styles */
+.btn {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+}
+
+/* Add Button */
+.add-btn {
+  background-color: #00e676;
+  color: #000;
+  /* box-shadow: 0px 0px 10px #00e676; */
+}
+.add-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px #00ff55;
+}
+
+/* Update Button */
+.update-btn {
+  background-color: #2196f3;
+  color: #fff;
+  /* box-shadow: 0px 0px 10px #2196f3; */
+}
+.update-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px #2196f3;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background-color: #757575;
+  color: #fff;
+  /* box-shadow: 0px 0px 10px #757575; */
+}
+.cancel-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px #757575;
+}
+
+/* Items List */
+.items-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Item */
+.item {
+  background-color: #333;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #444;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+.item:hover {
+  border-color: #00ff55;
+  transform: scale(1.02);
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Edit Button */
+.edit-btn {
+  background-color: #ffc107;
+  color: #000;
+  /* box-shadow: 0px 0px 10px #ffc107; */
+}
+.edit-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px #ffc107;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  /* box-shadow: 0px 0px 10px #f44336; */
+}
+.delete-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px #f44336;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0px 0px 30px rgba(255, 204, 0, 1);
+  }
+}
